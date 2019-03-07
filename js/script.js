@@ -5,7 +5,7 @@ $(function () {
     let index = 0;
 
 
-    //ustawić szerokosc kontenera(dynamicznie)
+    // szerokosc kontenera(dynamiczna)
 
     slideShow.css("width", slideCount + "00%");
 
@@ -34,7 +34,7 @@ $(function () {
         };
 
 
-        //chowamy napis na kolejnym slajdzie
+        //chowam napis na kolejnym slajdzie
 
         let slideCaption = slideShow.find(".slide-caption").eq(newSlideIndex);
         slideCaption.hide();
