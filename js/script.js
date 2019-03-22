@@ -5,7 +5,7 @@ $(function () {
     let index = 0;
 
 
-    // szerokosc kontenera(dynamiczna)
+    // dynamic width of container
 
     slideShow.css("width", slideCount + "00%");
 
@@ -14,7 +14,7 @@ $(function () {
 
     })
 
-    //nawigacja - obsluga zdarzen dla prawej i lewej strzalki
+    //event handling for arrows
 
     $(".prev-slide").click(function () {
         slide(index - 1);
@@ -26,7 +26,7 @@ $(function () {
 
     });
 
-    //glowna funkcja slidera
+    //main slider function
 
     function slide(newSlideIndex) {
         if (newSlideIndex < 0 || newSlideIndex > slideCount - 1) {
@@ -34,7 +34,7 @@ $(function () {
         };
 
 
-        //chowam napis na kolejnym slajdzie
+        //hide caption
 
         let slideCaption = slideShow.find(".slide-caption").eq(newSlideIndex);
         slideCaption.hide();
